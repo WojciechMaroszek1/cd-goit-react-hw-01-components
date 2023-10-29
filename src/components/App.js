@@ -7,7 +7,15 @@ import IndexCss from './App.css';
 
 export const App = () => {
   return ( 
-  <div class="container">
+  <div 
+    style ={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        gap: 50,
+      
+    }}>
     <Profile
         username={user.username}
         tag={user.tag}

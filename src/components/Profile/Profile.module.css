@@ -9,6 +9,7 @@
     font-family: Roboto;
     font-size: 24px;
     font-style: bold;
+    border-radius: 10px;
   }
   .description {
     text-align: center;
@@ -35,6 +36,7 @@
     padding: 0;
     font-size: 20px;
     text-align: center;
+    gap:5px;
   }
   .label {
     padding: 10px;
@@ -42,9 +44,15 @@
   .stats_box {
     border: 1px solid gray;
     padding-bottom: 10px;
-    background-color: #fff;
     width: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .stats_box:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
   }

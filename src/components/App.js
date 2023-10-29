@@ -1,10 +1,11 @@
 import {Profile} from './Profile/Profile';
 
 import user from '../data/user.json';
+import IndexCss from './App.css'
 
 export const App = () => {
   return ( 
-  <div>
+  <div class="container">
     <Profile
         username={user.username}
         tag={user.tag}

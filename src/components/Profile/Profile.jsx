@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import css from '../Profile/Profile.module.css';
 
 export const Profile = ({username, tag, location, avatar, stats}) => (
-<div>
-    <div className={css.Profile}>
+<div className={css.box}>
+    <div className={css.profile}>
     <div className={css.description}>
     <img
       src={avatar}
@@ -16,17 +16,17 @@ export const Profile = ({username, tag, location, avatar, stats}) => (
   </div>
 
   <ul className={css.stats}>
-    <li>
+    <li className={css.stats_box}>
       <span className={css.label}>Follower</span>
       <span className={css.quantity}>{stats.followers}</span>
     </li>
-    <li>
+    <li className={css.stats_box}>
       <span className={css.label}>Views</span>
-      <span className={css.quantity}>2000</span>
+      <span className={css.quantity}>{stats.views}</span>
     </li>
-    <li>
+    <li className={css.stats_box}>
       <span className={css.label}>Likes</span>
-      <span className={css.quantity}>3000</span>
+      <span className={css.quantity}>{stats.likes}</span>
     </li>
   </ul>
     </div>
